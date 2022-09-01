@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">myForecast</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="min_temp">Min Temp</string>
+    <string name="max_temp">Max Temp</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="rain_precipitation">Rain Precipitation</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="currently">Currently</string>
+    <string name="currently_value">75 F</string>
+    <string name="feels_like_value">67 F</string>
+    <string name="rain_perception_value">2</string>
+    <string name="wind_speed_value">10 MPH</string>
+    <string name="max_temp_value">%1$s F</string>
+    <string name="min_temp_value">%1$s F</string>
+    <string name="date">8/28/2022</string>
+    <string name="condition">Partly Cloudy</string>
+    <string name="avg_temp">Avg Temp</string>
+    <string name="avg_temp_value">%1$s F</string>
+    <string name="refresh">Refresh</string>
+</resources>
