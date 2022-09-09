@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:backgroundTint="@color/blueish_idk"
-                android:onClick="@{(view) -> model.getForecast()}"
+                android:onClick="@{(view) -> model.getForecastRx()}"
                 android:text="@string/get_weather"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:backgroundTint="@color/blueish_idk"
-                android:onClick="@{(view) -> model.getForecast()}"
+                android:onClick="@{(view) -> model.getForecastRx()}"
                 android:text="@string/refresh"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/_10dp"
-                        android:text='@{String.format("%.2f F",model.forecastLiveData.current.precip_in)}'
+                        android:text='@{String.format("%.2f",model.forecastLiveData.current.precip_in)}'
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -164,7 +164,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/_10dp"
-                        android:text='@{String.format("%.2f F",model.forecastLiveData.current.wind_mph)}'
+                        android:text='@{String.format("%.2f MPH",model.forecastLiveData.current.wind_mph)}'
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold"

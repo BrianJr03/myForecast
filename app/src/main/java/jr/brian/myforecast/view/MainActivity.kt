@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import jr.brian.myforecast.R
 import jr.brian.myforecast.databinding.ActivityMainBinding
-import jr.brian.myforecast.model.remote.ForecastResponse
+import jr.brian.myforecast.model.remote.response.ForecastResponse
 import jr.brian.myforecast.viewmodel.MainViewModel
 
 @AndroidEntryPoint
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             swipeRefresh.setOnRefreshListener {
                 if (swipeRefresh.isRefreshing) {
-                    viewModel.getForecast()
+                    viewModel.getForecastRx()
                     swipeRefresh.isRefreshing = false
                 }
             }

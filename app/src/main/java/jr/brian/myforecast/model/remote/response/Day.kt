@@ -1,4 +1,4 @@
-package jr.brian.myforecast.model.remote
+package jr.brian.myforecast.model.remote.response
 
 data class Day(
     val avghumidity: Double,

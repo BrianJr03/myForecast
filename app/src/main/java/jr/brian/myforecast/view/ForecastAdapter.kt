@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import jr.brian.myforecast.R
 import jr.brian.myforecast.databinding.ForecastItemBinding
-import jr.brian.myforecast.model.remote.Forecastday
+import jr.brian.myforecast.model.remote.response.Forecastday
 
 class ForecastAdapter(private val forecasts: List<Forecastday>) :
     RecyclerView.Adapter<ForecastAdapter.ForecastViewHolder>() {

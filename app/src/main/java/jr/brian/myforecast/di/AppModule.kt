@@ -4,6 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import jr.brian.myforecast.model.Repository
 import jr.brian.myforecast.model.remote.ApiService
 import jr.brian.myforecast.util.Constants.API_KEY
@@ -71,6 +72,7 @@ object AppModule {
         val retrofit = Retrofit.Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(converterFactory)
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .client(okHttpClient)
 
         return retrofit.build()

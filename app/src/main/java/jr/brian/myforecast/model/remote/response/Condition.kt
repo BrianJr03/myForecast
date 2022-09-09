@@ -1,4 +1,4 @@
-package jr.brian.myforecast.model.remote
+package jr.brian.myforecast.model.remote.response
 
 data class Condition(
     val code: Int,
